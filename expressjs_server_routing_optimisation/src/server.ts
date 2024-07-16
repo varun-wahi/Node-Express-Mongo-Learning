@@ -1,6 +1,7 @@
 import express from "express";
 import userRouting from "./routing/user_routing";
 import postRouting from "./routing/post_routing";
+import appLogger from "./app_logger/app_logger";
 
 
 //initialising express
@@ -10,6 +11,7 @@ const app : express.Application = express();
 
 //to get json request, we need to define MIDDLEWARE
 app.use(express.json())
+app.use(appLogger)
 
 
 //ROUTING
