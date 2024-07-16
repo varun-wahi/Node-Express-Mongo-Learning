@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/node": "^20.14.10"
+    "@types/node": "^20.14.10",
+    "mongodb": "^6.8.0"
   }
 }
